@@ -1,4 +1,19 @@
 import streamlit as st
+import importlib.util
+import subprocess
+import sys
+
+# Check if plotly is installed
+if importlib.util.find_spec("plotly") is None:
+    st.error("Installing plotly... This may take a moment.")
+    try:
+        subprocess.check_call([sys.executable, "-m", "pip", "install", "plotly==5.18.0"])
+        st.success("Plotly installed successfully!")
+        st.experimental_rerun()
+    except Exception as e:
+        st.error(f"Failed to install plotly: {e}")
+
+# Now import the rest of your libraries
 import pandas as pd
 import numpy as np
 import plotly.express as px
