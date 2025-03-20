@@ -91,7 +91,7 @@ except Exception as e:
 def clean_medication_names(df, column='medication'):
     """Simplify medication names for better display"""
     if column in df.columns:
-        df[column] = df[column].str.replace(' \(.*\)', '', regex=True)
+        df[column] = df[column].str.replace(r' \(.*\)', '', regex=True)
     return df
 
 def get_top_side_effects(df, n=5):
