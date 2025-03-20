@@ -40,37 +40,37 @@ page = st.sidebar.radio(
 @st.cache_data
 def load_side_effect_data():
     """Load processed side effect data"""
-    return pd.read_csv('./data/processed_side_effect_frequency.csv')
+    return pd.read_csv('../data/processed_side_effect_frequency.csv')
 
 @st.cache_data
 def load_demographic_data():
     """Load processed demographic data"""
-    return pd.read_csv('./data/processed_demographic_data.csv')
+    return pd.read_csv('../data/processed_demographic_data.csv')
 
 @st.cache_data
 def load_organ_system_data():
     """Load processed organ system data"""
-    return pd.read_csv('./data/processed_organ_system_data.csv')
+    return pd.read_csv('../data/processed_organ_system_data.csv')
 
 @st.cache_data
 def load_comparison_data():
     """Load processed comparison data"""
-    return pd.read_csv('./data/processed_comparison_data.csv')
+    return pd.read_csv('../data/processed_comparison_data.csv')
 
 @st.cache_data
 def load_geographic_data():
     """Load processed geographic data"""
-    return pd.read_csv('./data/processed_geographic_data.csv')
+    return pd.read_csv('../data/processed_geographic_data.csv')
 
 @st.cache_data
 def load_faers_data():
     """Load raw FAERS data for additional analysis"""
-    return pd.read_csv('./data/faers_glp1_data.csv')
+    return pd.read_csv('../data/faers_glp1_data.csv')
 
 @st.cache_data
 def load_pubmed_data():
     """Load PubMed study data"""
-    return pd.read_csv('./data/pubmed_glp1_data.csv')
+    return pd.read_csv('../data/pubmed_glp1_data.csv')
 
 # Load all data
 try:
