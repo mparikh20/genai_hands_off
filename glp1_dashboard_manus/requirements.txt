@@ -1,8 +1,7 @@
 streamlit==1.43.2
-pandas
-numpy
+pandas==1.5.3
+numpy==1.24.3
 plotly==5.18.0
-matplotlib
-seaborn
-requests
-scikit-learn
+matplotlib==3.7.1
+seaborn==0.12.2
+requests==2.31.0
